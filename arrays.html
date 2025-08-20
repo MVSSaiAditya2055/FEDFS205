@@ -8,7 +8,44 @@
 <body>
     <h1>JavaScript Arrays & Methods</h1>
     <script>
-        
+        document.write("<h2>Creating Arrays</h2>");
+        let fruits=["Apple","Banana","Mango"];
+        document.write(typeof fruits+"<br><br>");
+        document.write("Fruits: " + fruits + "<br><br>");
+
+        let values=[10,20,30,40,50];
+        console.table(values);
+
+        let mixed=["fedf","205","c521a","name: Sai Aditya"];
+        document.write("Mixed Values: "+mixed+"<br><br>");
+
+        let mixed1=["fedf","205","c521a",{name: "Sai Aditya"}];
+        document.write("Mixed Values: "+mixed1+"<br><br>");
+
+        document.write("<h2>push() - Add element at end</h2>");
+        fruits.push("Orange");
+        document.write(fruits+ "<br><br>");
+
+        document.write("<h2>pop() - Remove last element</h2>");
+        fruits.pop();
+        document.write(fruits+"<br><br>");
+
+        let myList=fruits.toString();
+        document.write(myList+"<br><br>");
+        document.write(typeof myList);
+
+        document.write("<h2>shift() - Remove first element</h2>");
+        fruits.shift();
+        document.write(fruits+"<br><br>");
+
+        document.write("<h2>unshift() - Add element at start</h2>");
+        fruits.unshift("Apple");
+        document.write(fruits+"<br><br>");
+
+        document.write("<h2>concat() - Merge arrays</h2>");
+        let moreFruits=["Grapes","Pineapple"];
+        let allFruits=fruits.concat(moreFruits);
+        document.write(allFruits+"<br><br>");
     </script>
 </body>
 </html>
